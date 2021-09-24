@@ -12,6 +12,7 @@ gem "bootsnap", ">= 1.4.4", require: false
 # ===== App specific gems ========================
 gem "faker", "~> 2.18"
 gem "hotwire-rails"
+gem "pagy"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
