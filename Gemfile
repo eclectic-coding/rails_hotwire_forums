@@ -37,6 +37,7 @@ group :development do
   gem "rubocop", "~> 1.17"
   gem "rubocop-rails", "~> 2.11", ">= 2.11.1", require: false
   gem "rubocop-rspec", "~> 2.4"
+  gem "bullet", group: "development"
 end
 
 # ===== App specific gems ========================

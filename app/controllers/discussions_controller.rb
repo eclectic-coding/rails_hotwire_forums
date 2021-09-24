@@ -7,7 +7,7 @@ class DiscussionsController < ApplicationController
   end
 
   def show
-    @posts = @discussion.posts.all.order(created_at: :asc)
+    @posts = @discussion.posts.includes(:user, :rich_text_body).order(created_at: :asc)
     @new_post = @discussion.posts.new
   end
 
@@ -78,7 +78,7 @@ class DiscussionsController < ApplicationController
   def discussion_params
     params.require(:discussion).permit(:name, :category_id, :pinned, :closed, posts_attributes: [:body])
   end
-  
+
   def set_discussion
     @discussion = Discussion.find(params[:id])
   end

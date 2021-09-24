@@ -6,9 +6,9 @@ Rails.application.routes.draw do
     resources :posts, only: [:create, :show, :edit, :update, :destroy], module: :discussions
 
     collection do
-      get 'category/:id', to: "categories/discussions#index", as: :category
+      get "category/:id", to: "categories/discussions#index", as: :category
     end
   end
 
-  root to: 'static#home'
+  root to: "static#home"
 end
