@@ -14,7 +14,7 @@ class DiscussionBroadcaster
   private
 
   def replace_header
-    discussion.broadcast_replace(partial: "discussions/header", locals: { discussion: discussion })
+    discussion.broadcast_replace(partial: "discussions/header", locals: {discussion: discussion})
   end
 
   def replace_new_form
@@ -23,7 +23,7 @@ class DiscussionBroadcaster
       action: :replace,
       target: "new_post_form",
       partial: "discussions/posts/form",
-      locals: { post: discussion.posts.new }
+      locals: {post: discussion.posts.new}
     )
   end
 
