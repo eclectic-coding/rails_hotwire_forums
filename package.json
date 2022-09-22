@@ -2,7 +2,7 @@
   "name": "hotwire-forums",
   "private": true,
   "dependencies": {
-    "@hotwired/turbo-rails": "^7.1.3",
+    "@hotwired/turbo-rails": "^7.2.0",
     "@popperjs/core": "^2.11.6",
     "@rails/actioncable": "^6.1.7",
     "@rails/actiontext": "^6.1.7",
